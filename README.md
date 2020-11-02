@@ -10,6 +10,10 @@ retroactively added support for "kqueue" in server.c to support FreeBSD
 servers. I tested the kqueue code and it provided comparable performance
 results as epoll on Linux.
 
+Clients send a 4-byte request type (hard coded to "SAMP"). The server
+receives the request and increments a counter. No response is sent back
+to client.
+
 Exam Instructions (as provided by company I interviewed with)
 =============================================================
 The assignment is to implement a simple client/server application in C, then provide an abbreviated analysis on service capacity. 
