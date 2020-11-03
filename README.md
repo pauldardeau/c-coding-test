@@ -6,7 +6,7 @@ While interviewing for a job that required C coding skills, I was given
 this take-home programming exam that was to be completed over a 3-4 day period.
 
 The source code in this repo is what I turned in with one exception: I
-retroactively added support for "kqueue" in server.c to support FreeBSD
+subsequently added support for "kqueue" in server.c to support FreeBSD
 servers. I tested the kqueue code and it provided comparable performance
 results as epoll on Linux.
 
